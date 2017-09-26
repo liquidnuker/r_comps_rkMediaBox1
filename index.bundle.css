@@ -859,6 +859,9 @@ input [type="button"],
     .rkmediabox102 span:hover > .rkmediabox102_btn_svg {
       fill: #fff; }
 
+.rkmediabox102 .rkmediabox102_media-right p {
+  line-height: 114%; }
+
 .rkmediabox102 .rkmediabox102_media-right span {
   margin-top: 6px; }
 
