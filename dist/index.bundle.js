@@ -341,20 +341,76 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var RkrkMediaBox102 = function (_React$Component) {
-  _inherits(RkrkMediaBox102, _React$Component);
+function RkMediaBox102_mediaLeft(props) {
+  return React.createElement(
+    "div",
+    { className: "rkmediabox102_media-left" },
+    React.createElement(
+      "div",
+      { className: "rkmediabox102_img-holder" },
+      React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
+    )
+  );
+}
 
-  function RkrkMediaBox102(props) {
-    _classCallCheck(this, RkrkMediaBox102);
+function RkMediaBox102_content(props) {
+  return React.createElement(
+    "div",
+    null,
+    React.createElement(
+      "h3",
+      { className: "rkmediabox102_heading" },
+      "Media title 1"
+    ),
+    React.createElement(
+      "p",
+      null,
+      props.pr_text
+    )
+  );
+}
 
-    var _this = _possibleConstructorReturn(this, (RkrkMediaBox102.__proto__ || Object.getPrototypeOf(RkrkMediaBox102)).call(this, props));
+function RkMediaBox102_contentButtons(props) {
+  return React.createElement(
+    "div",
+    null,
+    React.createElement(
+      "span",
+      { role: "button", className: "btn btn1-01", tabindex: "0" },
+      "Read more",
+      React.createElement(
+        "svg",
+        { className: "rkmediabox102_btn_svg", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+        React.createElement("path", { d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" })
+      )
+    ),
+    React.createElement(
+      "span",
+      { role: "button", className: "btn btn1-01", tabindex: "0" },
+      "Read more",
+      React.createElement(
+        "svg",
+        { className: "rkmediabox102_btn_svg", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+        React.createElement("path", { d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" })
+      )
+    )
+  );
+}
+
+var RkMediaBox102_mediaRight = function (_React$Component) {
+  _inherits(RkMediaBox102_mediaRight, _React$Component);
+
+  function RkMediaBox102_mediaRight(props) {
+    _classCallCheck(this, RkMediaBox102_mediaRight);
+
+    var _this = _possibleConstructorReturn(this, (RkMediaBox102_mediaRight.__proto__ || Object.getPrototypeOf(RkMediaBox102_mediaRight)).call(this, props));
 
     _this.state = {
-      // property1: ""
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit,..."
     };
 
     // 
-    _this.method1 = _this.method1.bind(_this);
+    // this.method1 = this.method1.bind(this);
     return _this;
   }
 
@@ -363,7 +419,85 @@ var RkrkMediaBox102 = function (_React$Component) {
   // methods
 
 
-  _createClass(RkrkMediaBox102, [{
+  _createClass(RkMediaBox102_mediaRight, [{
+    key: "method1",
+    value: function method1() {
+      this.setState(function (prevState) {
+        return {
+          // z: ""
+        };
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "section",
+        { className: "rkmediabox102_media-right" },
+        React.createElement(RkMediaBox102_content, { pr_text: this.state.text }),
+        React.createElement(RkMediaBox102_contentButtons, null)
+      );
+    }
+  }]);
+
+  return RkMediaBox102_mediaRight;
+}(React.Component);
+
+function RkMediaBox102_extras(props) {
+  return React.createElement(
+    "footer",
+    { className: "row rkmediabox102_extras col-sm-12" },
+    React.createElement(
+      "p",
+      null,
+      "extras"
+    ),
+    React.createElement(
+      "span",
+      { role: "button", className: "btn btn1-01", tabindex: "0" },
+      "Read more",
+      React.createElement(
+        "svg",
+        { className: "rkmediabox102_btn_svg", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+        React.createElement("path", { d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" })
+      )
+    ),
+    React.createElement(
+      "span",
+      { role: "button", className: "btn btn1-01", tabindex: "0" },
+      "Read more",
+      React.createElement(
+        "svg",
+        { className: "rkmediabox102_btn_svg", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+        React.createElement("path", { d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" })
+      )
+    )
+  );
+}
+
+var RkMediaBox102 = function (_React$Component2) {
+  _inherits(RkMediaBox102, _React$Component2);
+
+  function RkMediaBox102(props) {
+    _classCallCheck(this, RkMediaBox102);
+
+    var _this2 = _possibleConstructorReturn(this, (RkMediaBox102.__proto__ || Object.getPrototypeOf(RkMediaBox102)).call(this, props));
+
+    _this2.state = {
+      // property1: ""
+    };
+
+    // 
+    _this2.method1 = _this2.method1.bind(_this2);
+    return _this2;
+  }
+
+  // lifecycle hooks
+
+  // methods
+
+
+  _createClass(RkMediaBox102, [{
     key: "method1",
     value: function method1() {
       this.setState(function (prevState) {
@@ -378,86 +512,17 @@ var RkrkMediaBox102 = function (_React$Component) {
       return React.createElement(
         "div",
         { className: "row rkmediabox102" },
-        React.createElement(
-          "div",
-          { className: "rkmediabox102_media-left" },
-          React.createElement(
-            "div",
-            { className: "rkmediabox102_img-holder" },
-            React.createElement("img", { src: "img.jpg", alt: "img alt", title: "img title" })
-          )
-        ),
-        React.createElement(
-          "section",
-          { className: "rkmediabox102_media-right" },
-          React.createElement(
-            "h3",
-            { className: "rkmediabox102_heading" },
-            "Media title 1"
-          ),
-          React.createElement(
-            "p",
-            null,
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          ),
-          React.createElement(
-            "span",
-            { className: "btn btn1-01", tabindex: "0" },
-            "Read more",
-            React.createElement(
-              "svg",
-              { className: "rkmediabox102_btn_svg", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
-              React.createElement("path", { d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" })
-            )
-          ),
-          React.createElement(
-            "span",
-            { className: "btn btn1-01", tabindex: "0" },
-            "Read more",
-            React.createElement(
-              "svg",
-              { className: "rkmediabox102_btn_svg", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
-              React.createElement("path", { d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" })
-            )
-          )
-        ),
-        React.createElement(
-          "footer",
-          { className: "row rkmediabox102_extras col-sm-12" },
-          React.createElement(
-            "p",
-            null,
-            "extras"
-          ),
-          React.createElement(
-            "span",
-            { role: "button", className: "btn btn1-01", tabindex: "0" },
-            "Read more",
-            React.createElement(
-              "svg",
-              { className: "rkmediabox102_btn_svg", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
-              React.createElement("path", { d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" })
-            )
-          ),
-          React.createElement(
-            "span",
-            { role: "button", className: "btn btn1-01", tabindex: "0" },
-            "Read more",
-            React.createElement(
-              "svg",
-              { className: "rkmediabox102_btn_svg", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
-              React.createElement("path", { d: "M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" })
-            )
-          )
-        )
+        React.createElement(RkMediaBox102_mediaLeft, null),
+        React.createElement(RkMediaBox102_mediaRight, null),
+        React.createElement(RkMediaBox102_extras, null)
       );
     }
   }]);
 
-  return RkrkMediaBox102;
+  return RkMediaBox102;
 }(React.Component);
 
-exports.default = RkrkMediaBox102;
+exports.default = RkMediaBox102;
 
 /***/ })
 /******/ ]);
