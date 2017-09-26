@@ -1,0 +1,178 @@
+// rkmediabox101
+// ==================================================/
+@mixin rkmediabox101_theme() {
+  .rkmediabox101 {
+    background-color: #141416;
+    color: #d5d5d5;
+
+    .rkmediabox101_img-holder {
+      border: 1px solid #000;
+    }
+
+    .rkmediabox101_media-right {
+      background-color: #1c1d22;
+    }
+
+    .rkmediabox101_heading {
+      background-color: #343437;
+      color: #fff;
+    }
+
+    .rkmediabox101_extras {
+      background-color: #2c2d32;
+
+      span {
+        color: #000;
+      }
+    }
+  }
+}
+@include rkmediabox101_theme();
+
+.rkmediabox101 {
+  .rkmediabox101_img-holder {
+    @extend %text--center;
+    @extend %padd--4;
+    
+    > img {
+      @extend %img--responsive;
+    }
+  }
+
+  .rkmediabox101_heading {
+    @extend %padd--4;
+  }
+
+  .rkmediabox101_media-right {
+    @extend %padd--4;
+
+    p {
+      @extend %padd--4;
+      line-height: 114%; /* most browsers is about 110% to 120% */
+    }
+  }
+
+  .rkmediabox101_extras {
+    @extend %padd--4;
+    margin-top: 4px;
+
+    span {
+      float: right;
+      margin-left: 4px;
+
+      &:hover > .rkmediabox101_btn_svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  .rkmediabox101_btn_svg {
+    @extend %display--inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .rkmediabox101 {
+    .rkmediabox101_media-left {
+      width: 30%;
+      float: left;
+    }
+
+    .rkmediabox101_media-right {
+      width: 70%;
+      float: left;
+    }
+  }
+}
+
+// rkmediabox102       
+// ==================================================/
+@mixin rkmediabox102_theme() {
+  .rkmediabox102 {
+    background-color: #141416;
+    color: #d5d5d5;
+
+    .rkmediabox102_heading {
+      background-color: #343437;
+      color: #fff; 
+    }
+
+    .rkmediabox102_extras {
+      background-color: #2c2d32;
+    }
+
+    span {
+      color: #000;
+
+      &:hover > .rkmediabox102_btn_svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+@include rkmediabox102_theme();
+
+.rkmediabox102 {
+  .rkmediabox102_img-holder {
+    @extend %text--center;
+
+    > img {
+      @extend %img--responsive;
+    }
+  }
+
+  .rkmediabox102_heading {
+    @extend %padd--4;
+  }
+
+  .rkmediabox102_media-right {
+    @extend %padd--4;
+
+    p {
+      @extend %padd--4;
+    }
+
+    span {      
+      margin-top: 6px;
+    }
+  }
+
+  .rkmediabox102_extras {
+    @extend %padd--4;
+
+    p {
+      @extend %display--inline-block;
+    }
+
+    span {      
+      float: right;
+      margin-right: 6px;
+    }
+  }
+
+  .rkmediabox102_btn_svg {
+    @extend %display--inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+  }
+}  
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .rkmediabox102 {
+    .rkmediabox102_media-left {
+      width: 30%;
+      float: left;
+    }
+
+    .rkmediabox102_media-right {
+      width: 70%;
+      float: left;
+    }
+  }
+}
