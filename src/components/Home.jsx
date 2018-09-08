@@ -8,7 +8,7 @@ export default function Home(props) {
   {/*rkMediaBox101*/}
     <h2 className="item-id">rkMediaBox101</h2>
     <div className="row">
-      <div className="col-sm-3">39</div>
+      <div className="col-sm-3">&nbsp;</div>
       <div className="col-sm-9">
         <RkMediaBox101 />
       </div>
@@ -17,7 +17,7 @@ export default function Home(props) {
   {/*rkMediaBox102*/}
     <h2 className="item-id">rkMediaBox102</h2>
     <div className="row">
-      <div className="col-sm-3">39</div>
+      <div className="col-sm-3">&nbsp;</div>
       <div className="col-sm-9">
         <RkMediaBox102 />
       </div>
